@@ -3,6 +3,7 @@ const products = [
     title: "CPU",
     img: "https://cdn.mos.cms.futurecdn.net/yPArHeZxCN9fXaYXgejAc-1200-80.jpg",
     price: 399,
+    
   },
   {
     title: "motherboard",

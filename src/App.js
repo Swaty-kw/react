@@ -16,7 +16,7 @@ function App() {
         All inclusive shop offering high end pc products including hardware and
         software.
       </p1>
-      <img src={grapics} alt="media" />
+      <img src={grapics} alt="media" className="image" />
       <ProductList />
     </div>
   );
