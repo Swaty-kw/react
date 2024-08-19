@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import grapics from "./assets/media/ER30N8JX0Askivi (1).jpg";
+import "./assets/css/style.css";
+import products from "./products"; //array of objects
+import ProductItem from "./components/ProductItem.js"; // component
+import ProductList from "./components/ProductList.js";
 
 function App() {
+  // const productList = products.map((product) => {
+  //return (
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="main">
+      <h1>Gijen Electronis</h1>
+      <p1>
+        All inclusive shop offering high end pc products including hardware and
+        software.
+      </p1>
+      <img src={grapics} alt="media" />
+      <ProductList />
     </div>
   );
 }
