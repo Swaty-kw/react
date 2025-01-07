@@ -1,25 +1,38 @@
-import "./App.css";
-import grapics from "./assets/media/ER30N8JX0Askivi (1).jpg";
-import "./assets/css/style.css";
-import products from "./products"; //array of objects
-import ProductItem from "./components/ProductItem.js"; // component
-import ProductList from "./components/ProductList.js";
+import React from "react";
+import { useState } from "react";
+import UserContext from "./UserContext";
+import Footer from "./components/Footer";
+import Navbar from "./components/Navbar";
+import Leftmenu from "./components/Leftmenu"
+import MainPage from './screens/MainPage'
 
-function App() {
-  // const productList = products.map((product) => {
-  //return (
+  const App = ()=> 
+  { const [user, setUser] = useState(!!localStorage.getItem("token"));
 
-  return (
-    <div className="main">
-      <h1>Gijen Electronis</h1>
-      <p1>
-        All inclusive shop offering high end pc products including hardware and
-        software.
-      </p1>
-      <img src={grapics} alt="media" className="image" />
-      <ProductList />
-    </div>
-  );
+return ( 
+  <div>
+
+<UserContext.Provider value={[user, setUser]}>
+        {/* <Footer/> */}
+        {/* <Navbar/> */}
+        {/* <Leftmenu/> */}
+        <MainPage/>
+       
+      </UserContext.Provider>
+
+  </div>
+);
+
 }
 
-export default App;
+
+console.log(console.error)
+
+
+
+
+
+
+
+
+export default App 
